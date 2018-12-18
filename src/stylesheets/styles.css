@@ -1,0 +1,10 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/components";
+
+
+@import "base";
+/* @import "objects"; */
+@import "components";
+
+
+@import "tailwindcss/utilities";

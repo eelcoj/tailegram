@@ -1,0 +1,15 @@
+/* Base.css contains unclassed HTML elements */
+
+body {
+  @apply h-full flex justify-center items-center p-8;
+  @apply bg-grey-lightest;
+  @apply font-sans leading-normal text-grey-darkest;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-black;
+}
+
+a {
+  @apply text-blue no-underline;
+}
