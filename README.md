@@ -2,9 +2,9 @@
 
 Using the default Tailwind configuration. Always a work in progress.
 
-[See an example]()
+[See an example](https://eelcoj.github.io/tailegram/)
 
-![Preview]()
+![Preview](https://user-images.githubusercontent.com/988051/50182795-8d825600-0310-11e9-8b8f-ed4d66f945a0.png)
 
 To get started, install the dependencies:
 
