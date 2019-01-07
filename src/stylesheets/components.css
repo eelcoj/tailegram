@@ -1,3 +1,155 @@
 /* Components.css contains UI components */
 /* Only classes are used here. Naming should component-specific */
 
+.messenger {
+  @apply relative flex w-3/4 max-h-full m-8;
+  @apply bg-white;
+  @apply shadow-lg;
+  @apply border rounded;
+}
+
+
+
+.messenger-sidebar {
+  @apply relative pb-12 w-1/3;
+}
+
+
+
+.sidebar-search {
+  @apply flex items-center px-2 py-3;
+  @apply bg-white;
+  @apply border-r border-grey-lighter;
+}
+
+
+
+.sidebar-search__input {
+  @apply flex justify-center items-center w-full p-2;
+  @apply bg-grey-lighter;
+  @apply text-xs leading-none text-grey-darker;
+  @apply rounded;
+}
+
+
+
+.sidebar-contacts {
+  @apply border-r border-grey-lighter;
+}
+
+
+
+.contact {
+  @apply flex mb-2;
+}
+
+.contact__time {
+  @apply text-xs font-normal text-grey-darker;
+}
+
+.contact__time--active {
+  @apply text-blue-lightest;
+}
+
+.contact--active {
+  @apply bg-blue;
+}
+
+.contact__avatar {
+  @apply flex flex-no-shrink justify-center items-center w-12 h-12 mt-2 mb-2 ml-2;
+  @apply bg-green bg-center bg-no-repeat bg-cover;
+  @apply text-xl text-white font-semibold uppercase text-center ;
+  @apply rounded-full;
+}
+
+.contact__avatar--message {
+  @apply w-8 h-8 m-0 ml-2;
+  @apply text-sm;
+}
+
+.contact__content {
+  @apply w-full p-2;
+  @apply border-b border-grey-lighter;
+  @apply text-sm;
+}
+
+.contact__content--active {
+  @apply border-blue;
+}
+
+.contact__name {
+  @apply flex justify-between w-full;
+  @apply leading-none font-semibold;
+}
+
+.contact__name--active {
+  @apply text-white;
+}
+
+.contact__name--message {
+  @apply font-medium text-blue;
+}
+
+.contact__message {
+  @apply relative;
+  @apply text-grey-dark;
+}
+
+.contact__message--active {
+  @apply text-blue-lightest;
+}
+
+
+
+.sidebar-navigation {
+  @apply absolute pin-b flex justify-between items-center w-full px-4 py-4;
+  @apply border-r border-grey-lighter;
+}
+
+
+
+.messenger-content {
+  @apply relative w-2/3 pb-12;
+  @apply overflow-hidden overflow-y-auto;
+}
+
+
+
+.content-header {
+  @apply flex justify-between items-center w-auto px-4 py-2;
+  @apply bg-white;
+  @apply border-b border-grey-lighter;
+}
+
+
+
+.content-navigation {
+  @apply flex items-center;
+}
+
+
+
+.messages-divider {
+  @apply py-1 px-2;
+  @apply bg-grey-lighter;
+  @apply text-xs leading-none text-grey-dark text-center;
+}
+
+.message {
+  @apply flex mb-0 px-4 py-2;
+}
+
+.message__content {
+  @apply w-full pl-2;
+  @apply text-sm;
+}
+
+.message-unfurl {
+  @apply pl-2;
+  @apply border-l-2 border-blue;
+}
+
+.new-message {
+  @apply absolute pin-b flex w-full py-4;
+  @apply bg-white border-t border-grey-lighter;
+}

@@ -545,6 +545,228 @@ a {
 
 /* Only classes are used here. Naming should component-specific */
 
+.messenger {
+  position: relative;
+  display: flex;
+  width: 75%;
+  max-height: 100%;
+  margin: 2rem;
+  background-color: #fff;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+  border-width: 1px;
+  border-radius: .25rem;
+}
+
+.messenger-sidebar {
+  position: relative;
+  padding-bottom: 3rem;
+  width: 33.33333%;
+}
+
+.sidebar-search {
+  display: flex;
+  align-items: center;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: #fff;
+  border-right-width: 1px;
+  border-color: #f1f5f8;
+}
+
+.sidebar-search__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: .5rem;
+  background-color: #f1f5f8;
+  font-size: .75rem;
+  line-height: 1;
+  color: #606f7b;
+  border-radius: .25rem;
+}
+
+.sidebar-contacts {
+  border-right-width: 1px;
+  border-color: #f1f5f8;
+}
+
+.contact {
+  display: flex;
+  margin-bottom: .5rem;
+}
+
+.contact__time {
+  font-size: .75rem;
+  font-weight: 400;
+  color: #606f7b;
+}
+
+.contact__time--active {
+  color: #eff8ff;
+}
+
+.contact--active {
+  background-color: #3490dc;
+}
+
+.contact__avatar {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: .5rem;
+  background-color: #38c172;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 9999px;
+}
+
+.contact__avatar--message {
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  margin-left: .5rem;
+  font-size: .875rem;
+}
+
+.contact__content {
+  width: 100%;
+  padding: .5rem;
+  border-bottom-width: 1px;
+  border-color: #f1f5f8;
+  font-size: .875rem;
+}
+
+.contact__content--active {
+  border-color: #3490dc;
+}
+
+.contact__name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.contact__name--active {
+  color: #fff;
+}
+
+.contact__name--message {
+  font-weight: 500;
+  color: #3490dc;
+}
+
+.contact__message {
+  position: relative;
+  color: #8795a1;
+}
+
+.contact__message--active {
+  color: #eff8ff;
+}
+
+.sidebar-navigation {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-right-width: 1px;
+  border-color: #f1f5f8;
+}
+
+.messenger-content {
+  position: relative;
+  width: 66.66667%;
+  padding-bottom: 3rem;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: #fff;
+  border-bottom-width: 1px;
+  border-color: #f1f5f8;
+}
+
+.content-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.messages-divider {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  background-color: #f1f5f8;
+  font-size: .75rem;
+  line-height: 1;
+  color: #8795a1;
+  text-align: center;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.message__content {
+  width: 100%;
+  padding-left: .5rem;
+  font-size: .875rem;
+}
+
+.message-unfurl {
+  padding-left: .5rem;
+  border-left-width: 2px;
+  border-color: #3490dc;
+}
+
+.new-message {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #fff;
+  border-top-width: 1px;
+  border-color: #f1f5f8;
+}
+
 .list-reset {
   list-style: none;
   padding: 0;

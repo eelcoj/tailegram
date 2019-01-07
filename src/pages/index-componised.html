@@ -1,67 +1,67 @@
 <!doctype html>
 <html lang="en" class="h-full">
 <head>
-  <title>Tailegram</title>
+  <title>Tailegram built with ITCSS + BEM</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
-  <div class="messenger relative flex w-3/4 max-h-full m-8 bg-white shadow-lg border rounded">
-    <div class="messenger-sidebar relative pb-12 w-1/3">
-      <div class="sidebar-search flex items-center px-2 py-3 bg-white border-r border-grey-lighter">
-        <div class="sidebar-search__input flex justify-center items-center w-full p-2 bg-grey-lighter text-xs leading-none text-grey-darker rounded">
+  <div class="messenger">
+    <div class="messenger-sidebar">
+      <div class="sidebar-search">
+        <div class="sidebar-search__input">
           <svg class="block w-3 h-3 mr-2 text-grey-darker fill-current cursor-pointer" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <path d="M12.9056439,14.3198574 C11.5509601,15.3729184 9.84871145,16 8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 C16,9.84871145 15.3729184,11.5509601 14.3198574,12.9056439 L19.6568542,18.2426407 L18.2426407,19.6568542 L12.9056439,14.3198574 Z M8,14 C11.3137085,14 14,11.3137085 14,8 C14,4.6862915 11.3137085,2 8,2 C4.6862915,2 2,4.6862915 2,8 C2,11.3137085 4.6862915,14 8,14 Z" id="Combined-Shape"></path> </g> </g> </svg>
           <span>Search</span>
         </div>
         <svg class="block w-6 h-6 ml-6 mr-4 text-blue fill-current cursor-pointer" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <path d="M9,10 L7,10 L7,12 L9,12 L9,14 L11,14 L11,12 L13,12 L13,10 L11,10 L11,8 L9,8 L9,10 Z M4,18 L4,2 L12,2 L12,6 L16,6 L16,18 L4,18 Z M2,19 L2,0 L3,0 L12,0 L14,0 L18,4 L18,6 L18,20 L17,20 L2,20 L2,19 Z" id="Combined-Shape"></path> </g> </g> </svg>
       </div>
 
-      <div class="sidebar-contacts border-r border-grey-lighter">
-        <div class="contact flex mb-2 bg-blue">
-          <span class="contact__avatar w-12 h-12 mt-2 mb-2 ml-2 flex flex-no-shrink justify-center items-center bg-green bg-center bg-no-repeat bg-cover text-xl text-white font-semibold uppercase text-center rounded-full" style="background-image: url(https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f);"></span>
-          <div class="contact__content w-full p-2 border-b border-blue text-sm">
-            <div class="contact__name flex justify-between w-full text-white leading-none font-semibold">
+      <div class="sidebar-contacts">
+        <div class="contact contact--active">
+          <span class="contact__avatar" style="background-image: url(https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f);"></span>
+          <div class="contact__content contact__content--active">
+            <div class="contact__name contact__name--active">
               Theresita Swann
-              <span class="text-xs font-normal text-blue-lightest">
+              <span class="contact__time contact__time--active">
                 <svg class="inline-block w-3 w-3 text-blue fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon> </g> </g> </svg>
                 <svg class="inline-block w-3 w-3 text-blue fill-current -ml-2 mr-1" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon> </g> </g> </svg>
                 15:35
               </span>
             </div>
-            <p class="contact__message text-blue-lightest">
+            <p class="contact__message contact__message--active">
               It's https://www.getsjabloon.com ❤️❤️❤️
             </p>
           </div>
         </div>
 
-        <div class="contact flex mb-2">
-          <span class="contact__avatar w-12 h-12 mt-2 mb-2 ml-2 flex flex-no-shrink justify-center items-center bg-green bg-center bg-no-repeat bg-cover text-xl text-white font-semibold uppercase text-center rounded-full" style="">FF</span>
-          <div class="contact__content w-full p-2 border-b border-grey-lighter text-sm">
-            <div class="contact__name flex justify-between w-full text-black leading-none font-semibold">
+        <div class="contact">
+          <span class="contact__avatar" style="">FF</span>
+          <div class="contact__content">
+            <div class="contact__name">
               Frank Forrey
-              <span class="text-xs font-normal text-grey-darker">
+              <span class="contact__time">
                 12:49
               </span>
             </div>
-            <p class="relative pr-6 contact__message text-grey-dark">
+            <p class="contact__message">
               Are you ghosting me? 🤨
               <span class="absolute pin-r pin-b flex w-4 h-4 justify-center items-center text-xs font-medium text-blue-lightest bg-blue rounded-full">9</span>
             </p>
           </div>
         </div>
 
-        <div class="contact flex mb-2">
-          <span class="contact__avatar w-12 h-12 mt-2 mb-2 ml-2 flex flex-no-shrink justify-center items-center bg-green bg-center bg-no-repeat bg-cover text-xl text-white font-semibold uppercase text-center rounded-full" style="background-image: url(https://images.unsplash.com/photo-1505806985939-d50038b76168?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=e4ed2f81507e77783f51f7738396d9cb)"></span>
-          <div class="contact__content w-full p-2 border-b border-grey-lighter text-sm">
-            <div class="contact__name flex justify-between w-full text-black leading-none font-semibold">
+        <div class="contact">
+          <span class="contact__avatar" style="background-image: url(https://images.unsplash.com/photo-1505806985939-d50038b76168?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=e4ed2f81507e77783f51f7738396d9cb)"></span>
+          <div class="contact__content">
+            <div class="contact__name">
               Celestyna Treverton
-              <span class="text-xs font-normal text-grey-darker">
+              <span class="contact__time">
                 <svg class="inline-block w-3 w-3 text-blue fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon> </g> </g> </svg>
                 <svg class="inline-block w-3 w-3 text-blue fill-current -ml-2 mr-1" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon> </g> </g> </svg>
                 11:19
               </span>
             </div>
-            <p class="relative pr-6 contact__message text-grey-dark">
+            <p class="contact__message">
               LOOOOLLLLLLL 😂🤣😂🤣
             </p>
           </div>
@@ -72,50 +72,50 @@
           <div class="contact__content w-full p-2 border-b border-grey-lighter text-sm">
             <div class="contact__name flex justify-between w-full text-black leading-none font-semibold">
               Vance Klingelhofer
-              <span class="text-xs font-normal text-grey-darker">
+              <span class="contact__time">
                 Sat
               </span>
             </div>
-            <p class="relative pr-6 contact__message text-grey-dark">
+            <p class="contact__message">
               You free for brunch tomorrow? 🍳
             </p>
           </div>
         </div>
 
-        <div class="contact flex mb-2">
-          <span class="contact__avatar w-12 h-12 mt-2 mb-2 ml-2 flex flex-no-shrink justify-center items-center bg-yellow-dark bg-center bg-no-repeat bg-cover text-xl text-white font-semibold uppercase text-center rounded-full" style="">BE</span>
-          <div class="contact__content w-full p-2 border-b border-grey-lighter text-sm">
-            <div class="contact__name flex justify-between w-full text-black leading-none font-semibold">
+        <div class="contact">
+          <span class="contact__avatar bg-yellow-dark" style="">BE</span>
+          <div class="contact__content">
+            <div class="contact__name">
               Bekki Eggleston ☀️
-              <span class="text-xs font-normal text-grey-darker">
+              <span class="contact__time">
                 Sat
               </span>
             </div>
-            <p class="relative pr-6 contact__message text-grey-dark">
+            <p class="contact__message">
               Such a crazy story, right?! 🤪
             </p>
           </div>
         </div>
 
-        <div class="contact flex mb-2">
-          <span class="contact__avatar w-12 h-12 mt-2 mb-2 ml-2 flex flex-no-shrink justify-center items-center bg-yellow-dark bg-center bg-no-repeat bg-cover text-xl text-white font-semibold uppercase text-center rounded-full" style="background-image: url(https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=3f295ad36e97b56caa7fc3db6deef987)"></span>
-          <div class="contact__content w-full p-2 border-b border-grey-lighter text-sm">
-            <div class="contact__name flex justify-between w-full text-black leading-none font-semibold">
+        <div class="contact">
+          <span class="contact__avatar" style="background-image: url(https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=3f295ad36e97b56caa7fc3db6deef987)"></span>
+          <div class="contact__content">
+            <div class="contact__name">
               Kurt Mendis
-              <span class="text-xs font-normal text-grey-darker">
+              <span class="contact__time">
                 Thu
               </span>
             </div>
-            <p class="relative pr-6 contact__message text-grey-dark">
+            <p class="contact__message">
               I know!!! I can't believe it's real!
             </p>
           </div>
         </div>
 
-        <div class="contact flex mb-2">
-          <span class="contact__avatar w-12 h-12 mt-2 mb-2 ml-2 flex flex-no-shrink justify-center items-center bg-yellow-dark bg-center bg-no-repeat bg-cover text-xl text-white font-semibold uppercase text-center rounded-full" style="background-image: url(https://images.unsplash.com/photo-1498529381350-89c2e7ccc430?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=f6143f1f2142185de1e1e3d955f729ec)"></span>
-          <div class="contact__content w-full p-2 border-b border-grey-lighter text-sm">
-            <div class="contact__name flex justify-between w-full text-black leading-none font-semibold">
+        <div class="contact">
+          <span class="contact__avatar" style="background-image: url(https://images.unsplash.com/photo-1498529381350-89c2e7ccc430?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=f6143f1f2142185de1e1e3d955f729ec)"></span>
+          <div class="contact__content">
+            <div class="contact__name">
               Cassandry
               <span class="text-xs font-normal text-grey-darker">
                 <svg class="inline-block w-3 w-3 text-blue fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon> </g> </g> </svg>
@@ -123,15 +123,14 @@
                 Wed
               </span>
             </div>
-            <p class="relative pr-6 contact__message text-grey-dark">
+            <p class="contact__message">
               I'm not sure about that. What do you think of off-white?
             </p>
           </div>
         </div>
-
       </div>
 
-      <div class="sidebar-navigation absolute pin-b flex justify-between items-center w-full px-4 py-4 border-r border-grey-lighter">
+      <div class="sidebar-navigation">
         <svg class="block w-6 h-6 text-grey fill-current cursor-pointer" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <path d="M4.99999861,5.00218626 C4.99999861,2.23955507 7.24419318,0 9.99999722,0 C12.7614202,0 14.9999958,2.22898489 14.9999958,5.00218626 L14.9999958,6.99781374 C14.9999958,9.76044493 12.7558013,12 9.99999722,12 C7.23857424,12 4.99999861,9.77101511 4.99999861,6.99781374 L4.99999861,5.00218626 Z M1.11022272e-16,16.6756439 C2.94172855,14.9739441 6.3571245,14 9.99999722,14 C13.6428699,14 17.0582659,14.9739441 20,16.6756471 L19.9999944,20 L0,20 L1.11022272e-16,16.6756439 Z" id="Combined-Shape"></path> </g> </g> </svg>
         <svg class="block w-6 h-6 text-grey fill-current cursor-pointer" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <path d="M11.1735916,16.8264084 C7.57463481,15.3079672 4.69203285,12.4253652 3.17359164,8.82640836 L5.29408795,6.70591205 C5.68612671,6.31387329 6,5.55641359 6,5.00922203 L6,0.990777969 C6,0.45097518 5.55237094,3.33066907e-16 5.00019251,3.33066907e-16 L1.65110039,3.33066907e-16 L1.00214643,8.96910337e-16 C0.448676237,1.13735153e-15 -1.05725384e-09,0.445916468 -7.33736e-10,1.00108627 C-7.33736e-10,1.00108627 -3.44283713e-14,1.97634814 -3.44283713e-14,3 C-3.44283713e-14,12.3888407 7.61115925,20 17,20 C18.0236519,20 18.9989137,20 18.9989137,20 C19.5517984,20 20,19.5565264 20,18.9978536 L20,18.3488996 L20,14.9998075 C20,14.4476291 19.5490248,14 19.009222,14 L14.990778,14 C14.4435864,14 13.6861267,14.3138733 13.2940879,14.7059121 L11.1735916,16.8264084 Z" id="Combined-Shape"></path> </g> </g> </svg>
         <div class="relative">
@@ -142,21 +141,21 @@
       </div>
     </div>
 
-    <div class="messenger-content relative w-2/3 pb-12 overflow-hidden overflow-y-auto">
-      <div class="content-header flex justify-between items-center w-auto pr-4 pl-4 bg-white border-b border-grey-lighter ">
-        <div class="contact flex p-2">
-          <span class="contact__avatar w-8 h-8 flex-no-shrink mr-2 bg-green bg-center bg-no-repeat bg-cover rounded-full" style="background-image: url(https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f);"></span>
-          <div class="contact__content w-full text-sm">
-            <div class="contact__name flex justify-between w-full text-black leading-none font-semibold">
+    <div class="messenger-content">
+      <div class="content-header">
+        <div class="contact flex mb-0">
+          <span class="contact__avatar contact__avatar--message mb-0" style="background-image: url(https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f);"></span>
+          <div class="contact__content py-0 border-0">
+            <div class="contact__name">
               Theresita Swann
             </div>
-            <p class="contact__message text-grey-dark">
+            <p class="text-grey-dark">
               last seen recently
             </p>
           </div>
         </div>
 
-        <div class="content-navigation flex items-center">
+        <div class="content-navigation">
           <svg class="block w-4 h-4 text-blue fill-current cursor-pointer" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <path d="M11.1735916,16.8264084 C7.57463481,15.3079672 4.69203285,12.4253652 3.17359164,8.82640836 L5.29408795,6.70591205 C5.68612671,6.31387329 6,5.55641359 6,5.00922203 L6,0.990777969 C6,0.45097518 5.55237094,3.33066907e-16 5.00019251,3.33066907e-16 L1.65110039,3.33066907e-16 L1.00214643,8.96910337e-16 C0.448676237,1.13735153e-15 -1.05725384e-09,0.445916468 -7.33736e-10,1.00108627 C-7.33736e-10,1.00108627 -3.44283713e-14,1.97634814 -3.44283713e-14,3 C-3.44283713e-14,12.3888407 7.61115925,20 17,20 C18.0236519,20 18.9989137,20 18.9989137,20 C19.5517984,20 20,19.5565264 20,18.9978536 L20,18.3488996 L20,14.9998075 C20,14.4476291 19.5490248,14 19.009222,14 L14.990778,14 C14.4435864,14 13.6861267,14.3138733 13.2940879,14.7059121 L11.1735916,16.8264084 Z" id="Combined-Shape"></path> </g> </g> </svg>
           <svg class="block w-4 h-4 ml-6 text-blue fill-current cursor-pointer" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <path d="M12.9056439,14.3198574 C11.5509601,15.3729184 9.84871145,16 8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 C16,9.84871145 15.3729184,11.5509601 14.3198574,12.9056439 L19.6568542,18.2426407 L18.2426407,19.6568542 L12.9056439,14.3198574 Z M8,14 C11.3137085,14 14,11.3137085 14,8 C14,4.6862915 11.3137085,2 8,2 C4.6862915,2 2,4.6862915 2,8 C2,11.3137085 4.6862915,14 8,14 Z" id="Combined-Shape"></path> </g> </g> </svg>
           <svg class="block w-6 h-6 ml-6 text-blue fill-current cursor-pointer" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <path d="M4,12 C5.1045695,12 6,11.1045695 6,10 C6,8.8954305 5.1045695,8 4,8 C2.8954305,8 2,8.8954305 2,10 C2,11.1045695 2.8954305,12 4,12 Z M10,12 C11.1045695,12 12,11.1045695 12,10 C12,8.8954305 11.1045695,8 10,8 C8.8954305,8 8,8.8954305 8,10 C8,11.1045695 8.8954305,12 10,12 Z M16,12 C17.1045695,12 18,11.1045695 18,10 C18,8.8954305 17.1045695,8 16,8 C14.8954305,8 14,8.8954305 14,10 C14,11.1045695 14.8954305,12 16,12 Z" id="Combined-Shape"></path> </g> </g> </svg>
@@ -164,91 +163,91 @@
       </div>
 
       <div class="messages">
-        <div class="contact message flex px-4 py-2">
-          <span class="contact__avatar w-8 h-8 ml-2 flex flex-no-shrink justify-center items-center bg-purple bg-center bg-no-repeat bg-cover text-sm text-white font-semibold uppercase text-center rounded-full" style="">EJ</span>
-          <div class="contact__content w-full pl-2 text-sm">
-            <div class="contact__name flex justify-between w-full font-medium text-blue leading-none">
+        <div class="contact message">
+          <span class="contact__avatar contact__avatar--message bg-purple" style="">EJ</span>
+          <div class="message__content">
+            <div class="contact__name contact__name--message">
               EJ
-              <span class="text-xs font-normal text-grey-darker">
+              <span class="contact__time">
                 <svg class="inline-block w-3 w-3 text-blue fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon> </g> </g> </svg>
                 <svg class="inline-block w-3 w-3 text-blue fill-current -ml-2 mr-1" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon> </g> </g> </svg>
                 14:23
               </span>
             </div>
-            <p class="contact__message text-grey-darkest">
+            <p class="pr-10">
               Those are beautiful!
             </p>
           </div>
         </div>
 
-        <div class="contact message flex px-4 py-2">
-          <span class="contact__avatar w-8 h-8 ml-2 flex flex-no-shrink justify-center items-center bg-green bg-center bg-no-repeat bg-cover text-xl text-white font-semibold uppercase text-center rounded-full" style="background-image: url(https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f);"></span>
-          <div class="contact__content w-full pl-2 text-sm">
-            <div class="contact__name flex justify-between w-full font-medium text-blue leading-none">
+        <div class="contact message">
+          <span class="contact__avatar contact__avatar--message" style="background-image: url(https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f);"></span>
+          <div class="message__content">
+            <div class="contact__name contact__name--message">
               Theresita Swann
-              <span class="text-xs font-normal text-grey-darker">
+              <span class="contact__time">
                 15:35</span>
             </div>
-            <p class="contact__message pr-10 text-grey-darkest">
+            <p class="pr-10">
             Have you seen Sjabloon? It's a Ruby on Rails application template that helps with all the mundane stuff you have to for every web app.
             </p>
           </div>
         </div>
 
-        <div class="contact message flex px-4 py-2">
-          <span class="contact__avatar w-8 h-8 ml-2 flex flex-no-shrink justify-center items-center bg-purple bg-center bg-no-repeat bg-cover text-sm text-white font-semibold uppercase text-center rounded-full" style="">EJ</span>
-          <div class="contact__content w-full pl-2 text-sm">
-            <div class="contact__name flex justify-between w-full font-medium text-blue leading-none">
+        <div class="contact message">
+          <span class="contact__avatar contact__avatar--message bg-purple" style="">EJ</span>
+          <div class="message__content">
+            <div class="contact__name contact__name--message">
               EJ
-              <span class="text-xs font-normal text-grey-darker">
+              <span class="contact__time">
                 <svg class="inline-block w-3 w-3 text-blue fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon> </g> </g> </svg>
                 <svg class="inline-block w-3 w-3 text-blue fill-current -ml-2 mr-1" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <polygon id="Path-126" points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon> </g> </g> </svg>
                 14:23
               </span>
             </div>
-            <p class="contact__message text-grey-darkest">
+            <p class="pr-10">
               No, I haven't.
             </p>
           </div>
         </div>
 
-        <div class="messages-divider py-1 px-2 bg-grey-lighter text-xs leading-none text-grey-dark text-center">Unread messages</div>
+        <div class="messages-divider">Unread messages</div>
 
-        <div class="contact message flex px-4 py-2">
-          <span class="contact__avatar w-8 h-8 ml-2 flex flex-no-shrink justify-center items-center bg-green bg-center bg-no-repeat bg-cover text-xl text-white font-semibold uppercase text-center rounded-full" style="background-image: url(https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f);"></span>
-          <div class="contact__content w-full pl-2 text-sm">
-            <div class="contact__name flex justify-between w-full font-medium text-blue leading-none">
+        <div class="contact message">
+          <span class="contact__avatar contact__avatar--message" style="background-image: url(https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f);"></span>
+          <div class="message__content">
+            <div class="contact__name contact__name--message">
               Theresita Swann
-              <span class="text-xs font-normal text-grey-darker">
+              <span class="contact__time">
                 15:35
               </span>
             </div>
-            <p class="contact__message text-grey-darkest">
+            <p class="pr-10">
               Check it @ <a href="https://www.getsjabloon.com" class="" target="_blank">https://www.getsjabloon.com</a> ❤️❤️❤️
             </p>
-            <blockquote class="message-unfurl pl-2 border-l-2 border-blue">
+            <blockquote class="message-unfurl">
               <p>Sjabloon. Flying start for Ruby on Rails makers.</p>
             </blockquote>
           </div>
         </div>
 
-        <div class="contact message flex px-4 py-2">
-          <span class="contact__avatar w-8 h-8 ml-2 flex flex-no-shrink justify-center items-center bg-green bg-center bg-no-repeat bg-cover text-xl text-white font-semibold uppercase text-center rounded-full" style="background-image: url(https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f);"></span>
-          <div class="contact__content w-full pl-2 text-sm">
-            <div class="contact__name flex justify-between w-full font-medium text-blue leading-none">
+        <div class="contact message">
+          <span class="contact__avatar contact__avatar--message" style="background-image: url(https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f);"></span>
+          <div class="message__content">
+            <div class="contact__name contact__name--message">
               Theresita Swann
-              <span class="text-xs font-normal text-grey-darker">
+              <span class="contact__time">
                 15:35
               </span>
             </div>
-            <p class="contact__message pr-10 text-grey-darkest">
+            <p class="pr-10">
              It does a lot of setup and config for you, like modern front end, authentication with Devise, transactional email template design and many UI components built with Tailwind CSS.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="new-message absolute pin-b flex w-full py-4 bg-white border-t border-grey-lighter">
+      <div class="new-message">
         <svg class="block w-6 h-6 ml-6 text-grey fill-current cursor-pointer" style="transform: rotate(-45deg)" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <path d="M15,3 L7,3 C3.13400675,3 0,6.13400675 0,10 C0,13.8659932 3.13400675,17 7,17 L15,17 L15,15 L9.44949137,15 L7,15 C4.23857625,15 2,12.7614237 2,10 C2,7.23857625 4.23857625,5 7,5 L9.44949137,5 L12.9998169,5 L15,5 C16.6568542,5 18,6.34314575 18,8 C18,9.65685425 16.6568542,11 15,11 L12.9998169,11 L8.41464715,11 L7,11 C6.44771525,11 6,10.5522847 6,10 C6,9.44771525 6.44771525,9 7,9 L8.41464715,9 L15,9 L15,7 L7,7 C5.34314575,7 4,8.34314575 4,10 C4,11.6568542 5.34314575,13 7,13 L15,13 C17.7614237,13 20,10.7614237 20,8 C20,5.23857625 17.7614237,3 15,3 Z" id="Combined-Shape"></path> </g> </g> </svg>
         <textarea rows="1" class="flex flex-grow flex-no-shrink ml-6 text-sm leading-none outline-none" placeholder="Write a message…"></textarea>
         <svg class="block w-6 h-6 ml-6 text-grey fill-current cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM6.5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm7 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm2.16 3a6 6 0 0 1-11.32 0h11.32z"></path></svg>
